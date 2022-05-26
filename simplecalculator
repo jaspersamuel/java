@@ -1,0 +1,26 @@
+public class userinput {
+	public static void main(String[] args) {
+		Scanner scanner=new Scanner(System.in);
+		System.out.println("Enter number1:");
+		int number1=scanner.nextInt();
+		System.out.println("The number you entered is-"+number1);
+		System.out.println("Enter number2:");
+		int number2=scanner.nextInt();
+		//operations
+		System.out.println("choices available are");
+		System.out.println("1-Addition");
+		System.out.println("2-Subtraction");
+		System.out.println("3-Multiplication");
+		
+		System.out.println("Enter your choice:");
+		int choice=scanner.nextInt();
+		if(choice==1) {
+			System.out.println("Result:"+(number1+number2));
+		}else if(choice==2) {
+			System.out.println("Result:"+(number1-number2));
+		}else if(choice==3) {
+			System.out.println("Result:"+(number1*number2));
+		}
+	}
+
+}
